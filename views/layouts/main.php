@@ -41,7 +41,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
             ['label' => 'Actor', 'url' => ['/actor/index']],
-            ['label' => 'Actor_Pelicula', 'url' => ['/actor_pelicula/index']],
+            ['label' => 'Actor_Pelicula', 'url' => ['/actor-pelicula/index']],
             ['label' => 'Alquiler', 'url' => ['/alquiler/index']],
             ['label' => 'Director', 'url' => ['/director/index']],
             ['label' => 'Formato', 'url' => ['/formato/index']],
