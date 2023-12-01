@@ -40,8 +40,15 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         'options' => ['class' => 'navbar-nav'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
+            ['label' => 'Actor', 'url' => ['/actor/index']],
+            ['label' => 'Actor_Pelicula', 'url' => ['/actor_pelicula/index']],
+            ['label' => 'Alquiler', 'url' => ['/alquiler/index']],
+            ['label' => 'Director', 'url' => ['/director/index']],
+            ['label' => 'Formato', 'url' => ['/formato/index']],
+            ['label' => 'Genero', 'url' => ['/genero/index']],
+            ['label' => 'Pelicula', 'url' => ['/pelicula/index']],
+            ['label' => 'Sexo', 'url' => ['/sexo/index']],
+            ['label' => 'Socio', 'url' => ['/socio/index']],
             Yii::$app->user->isGuest
                 ? ['label' => 'Login', 'url' => ['/site/login']]
                 : '<li class="nav-item">'
