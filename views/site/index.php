@@ -6,6 +6,21 @@ $this->title = 'My Yii Application';
 ?>
 <div class="site-index">
 
+    <div class="jumbotron text-center bg-transparent mt-5 mb-5" id="section-1" style="
+    background-image: url('https://www.w3schools.com/howto/img_parallax.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        ">
+        <div class="container">
+            <h1 class="display-4">Renta de Películas</h1>
+            <h1 class="display-4">CopyFlix</h1>
+            <p class="lead">Las mejores películas a un clic de distancia.</p>
+        </div>
+    </div>
+
     <div class="jumbotron text-center bg-transparent mt-5 mb-5">
         <h1 class="display-4">BIENVENIDOS!</h1>
 
@@ -15,35 +30,42 @@ $this->title = 'My Yii Application';
     </div>
 
     <div class="body-content">
-
         <div class="row">
             <div class="col-lg-4 mb-3">
                 <h2>Lista de sexos</h2>
-                <?php 
-                    foreach($listaSexo as $item){
-                        echo "<p>".$item->SEX_NOMBRE."</p>";
-                    }
+                <?php
+                foreach($listaSexo as $item) {
+                    echo "<p>".$item->SEX_NOMBRE."</p>";
+                }
                 ?>
             </div>
             <div class="col-lg-4 mb-3">
                 <h2>Heading</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
                     fugiat nulla pariatur.</p>
 
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
+                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/forum/">Yii Forum &raquo;</a>
+                </p>
             </div>
             <div class="col-lg-4">
                 <h2>Heading</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
                     fugiat nulla pariatur.</p>
 
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/extensions/">Yii Extensions
+                        &raquo;</a></p>
             </div>
         </div>
 

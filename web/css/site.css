@@ -86,3 +86,12 @@ a.desc:after {
 .form-group {
     margin-bottom: 1rem;
 }
+
+#section-1 {
+    background-image: url("https://www.w3schools.com/howto/img_parallax.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
