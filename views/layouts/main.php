@@ -31,23 +31,20 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 
 <header id="header">
     <?php
-    NavBar::begin([
-        'brandLabel' => Yii::$app->name,
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => ['class' => 'navbar-expand-md navbar-dark bg-dark fixed-top']
+      NavBar::begin([
+        'options' => [
+            'class' => 'navbar-expand-md navbar-dark bg-dark fixed-top',
+        ],
     ]);
+      
+    echo Html::a(
+      Html::img('https://drive.google.com/uc?id=1iE3ntXaFW04GZfXQ7YTEcHE0H-_yKCkA', ['alt' => 'Logo de la aplicación', 'class' => 'logo']),
+      Yii::$app->homeUrl
+  );
+  
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav'],
         'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'Actor', 'url' => ['/actor/index']],
-            ['label' => 'Actor_Pelicula', 'url' => ['/actor-pelicula/index']],
-            ['label' => 'Alquiler', 'url' => ['/alquiler/index']],
-            ['label' => 'Director', 'url' => ['/director/index']],
-            ['label' => 'Formato', 'url' => ['/formato/index']],
-            ['label' => 'Genero', 'url' => ['/genero/index']],
-            ['label' => 'Pelicula', 'url' => ['/pelicula/index']],
-            ['label' => 'Sexo', 'url' => ['/sexo/index']],
             ['label' => 'Socio', 'url' => ['/socio/index']],
             Yii::$app->user->isGuest
                 ? ['label' => 'Login', 'url' => ['/site/login']]
