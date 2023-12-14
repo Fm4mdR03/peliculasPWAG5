@@ -42,11 +42,12 @@ use app\models\Pelicula;
         <?php foreach ($peliculasAlquiladas as $pelicula) : ?>
             <div class="col-lg-3 mb-3">
                 <h2><?= $pelicula->PEL_NOMBRE ?></h2>
-                <p><strong>Director:</strong> <?= $pelicula->DIR_NOMBRE ?></p>
-                <p><strong>Género:</strong> <?= $pelicula->GEN_NOMBRE ?></p>
+                <p><strong>Director:</strong> <?= $pelicula->dIR ? $pelicula->dIR->DIR_NOMBRE : 'N/A' ?></p>
+                <p><strong>Género:</strong> <?= $pelicula->gEN ? $pelicula->gEN->GEN_NOMBRE : 'N/A' ?></p>
                 <p><strong>Fecha de Estreno:</strong> <?= $pelicula->PEL_FECHA_ESTRENO ?></p>
             </div>
         <?php endforeach; ?>
+
 
     </div>
 </div>
