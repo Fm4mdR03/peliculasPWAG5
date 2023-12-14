@@ -29,37 +29,50 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <body class="d-flex flex-column h-100">
 <?php $this->beginBody() ?>
 
-<header id="header">
-    <?php
+<header id="header" class="headerIndex">
+    <div>
+        <?php
       NavBar::begin([
-        'options' => [
-            'class' => 'navbar-expand-md navbar-dark bg-dark fixed-top',
-        ],
-    ]);
-      
-    echo Html::a(
-      Html::img('https://drive.google.com/uc?id=1iE3ntXaFW04GZfXQ7YTEcHE0H-_yKCkA', ['alt' => 'Logo de la aplicación', 'class' => 'logo']),
-      Yii::$app->homeUrl
-  );
-  
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav'],
-        'items' => [
-            ['label' => 'Socio', 'url' => ['/socio/index']],
+          'options' => [
+              'class' => 'navbar-expand-md navbar-dark bg-dark fixed-top',
+            ],
+        ]);
+        
+        echo Html::a(
+            Html::img('https://drive.google.com/uc?id=1iE3ntXaFW04GZfXQ7YTEcHE0H-_yKCkA', ['alt' => 'Logo de la aplicación', 'class' => 'logo']),
+            Yii::$app->homeUrl
+        );
+        echo "</div>";
+        echo "<div>";
+        
+        echo Nav::widget([
+            'options' => ['class' => 'navbar-nav'],
+            'items' => [
+                ['label' => 'Actor', 'url' => ['/actor/index']],
+                ['label' => 'Actor_Pelicula', 'url' => ['/actor-pelicula/index']],
+                ['label' => 'Alquiler', 'url' => ['/alquiler/index']],
+                ['label' => 'Director', 'url' => ['/director/index']],
+                ['label' => 'Formato', 'url' => ['/formato/index']],
+                ['label' => 'Genero', 'url' => ['/genero/index']],
+                ['label' => 'Pelicula', 'url' => ['/pelicula/index']],
+                ['label' => 'Sexo', 'url' => ['/sexo/index']],
+                ['label' => 'Socio', 'url' => ['/socio/index']],
+
             Yii::$app->user->isGuest
-                ? ['label' => 'Login', 'url' => ['/site/login']]
+            ? ['label' => 'Login', 'url' => ['/site/login']]
                 : '<li class="nav-item">'
-                    . Html::beginForm(['/site/logout'])
-                    . Html::submitButton(
+                . Html::beginForm(['/site/logout'])
+                . Html::submitButton(
                         'Logout (' . Yii::$app->user->identity->username . ')',
                         ['class' => 'nav-link btn btn-link logout']
-                    )
-                    . Html::endForm()
-                    . '</li>'
-        ]
-    ]);
-    NavBar::end();
-    ?>
+                        )
+                        . Html::endForm()
+                        . '</li>'
+                        ]
+                    ]);
+                    NavBar::end();
+                    ?>
+            </div>
 </header>
 
 <main id="main" class="flex-shrink-0" role="main">
