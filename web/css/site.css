@@ -96,6 +96,17 @@ a.desc:after {
     /* Altura máxima de 50px */
 }
 
+.headerIndex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerIndex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 .section-1 {
     background-image: url("../images/portada.jpg");
     min-height: 500px;
@@ -117,21 +128,4 @@ a.desc:after {
 
 .section-1_container__titulo{
     font-weight: bold;
-}
-
-/* Estilo para limitar el tamaño del logo */
-.logo {
-    width: 100px;  /* Ancho máximo de 100px */
-    height: 50px;  /* Altura máxima de 50px */
-    /* margin-right: 700px; */
-}
-
-.headerIndex {
-    display: flex;
-    justify-content: space-between;
-}
-
-.headerIndex {
-    display: flex;
-    justify-content: space-between;
 }
