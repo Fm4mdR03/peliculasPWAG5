@@ -1,4 +1,4 @@
-main > .container {
+main>.container {
     padding: 70px 15px 20px;
 }
 
@@ -8,7 +8,7 @@ main > .container {
     height: 60px;
 }
 
-.footer > .container {
+.footer>.container {
     padding-right: 15px;
     padding-left: 15px;
 }
@@ -19,7 +19,8 @@ main > .container {
 }
 
 /* add sorting icons to gridview sort links */
-a.asc:after, a.desc:after {
+a.asc:after,
+a.desc:after {
     content: '';
     left: 3px;
     display: inline-block;
@@ -59,27 +60,27 @@ a.desc:after {
 }
 
 /* align the logout "link" (button in form) of the navbar */
-.nav li > form > button.logout {
+.nav li>form>button.logout {
     padding-top: 7px;
     color: rgba(255, 255, 255, 0.5);
 }
 
 @media(max-width:767px) {
-    .nav li > form > button.logout {
-        display:block;
+    .nav li>form>button.logout {
+        display: block;
         text-align: left;
         width: 100%;
         padding: 10px 0;
     }
 }
 
-.nav > li > form > button.logout:focus,
-.nav > li > form > button.logout:hover {
+.nav>li>form>button.logout:focus,
+.nav>li>form>button.logout:hover {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.75);
 }
 
-.nav > li > form > button.logout:focus {
+.nav>li>form>button.logout:focus {
     outline: none;
 }
 
@@ -87,19 +88,47 @@ a.desc:after {
     margin-bottom: 1rem;
 }
 
-#section-1 {
-    background-image: url("https://www.w3schools.com/howto/img_parallax.jpg");
+/* Estilo para limitar el tamaño del logo */
+.logo {
+    width: 100px;
+    /* Ancho máximo de 100px */
+    height: 50px;
+    /* Altura máxima de 50px */
+}
+
+.section-1 {
+    background-image: url("../images/portada.jpg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.section-1_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    color: #ffffff;
+}
+
+.section-1_container__titulo{
+    font-weight: bold;
+}
+
 /* Estilo para limitar el tamaño del logo */
 .logo {
     width: 100px;  /* Ancho máximo de 100px */
     height: 50px;  /* Altura máxima de 50px */
     /* margin-right: 700px; */
+}
+
+.headerIndex {
+    display: flex;
+    justify-content: space-between;
 }
 
 .headerIndex {
