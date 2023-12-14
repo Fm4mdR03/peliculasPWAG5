@@ -6,23 +6,18 @@ $this->title = 'My Yii Application';
 ?>
 <div class="site-index">
 
-    <div class="jumbotron text-center bg-transparent mt-5 mb-5" id="section-1" style="
-    background-image: url('https://www.w3schools.com/howto/img_parallax.jpg');
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-        ">
-        <div class="container">
-            <h1 class="display-4">Renta de Películas</h1>
-            <h1 class="display-4">CopyFlix</h1>
-            <p class="lead">Las mejores películas a un clic de distancia.</p>
+    <div class="section-1 jumbotron text-center mt-5 mb-5">
+        <div class="section-1_container container">
+            <div>
+                <h1 class="section-1_container__titulo display-4">Renta de Películas</h1>
+                <h1 class="section-1_container__titulo display-4">CopyFlix</h1>
+                <p class="lead">Las mejores películas a un clic de distancia.</p>
+            </div>
         </div>
     </div>
 
     <div class="jumbotron text-center bg-transparent mt-5 mb-5">
-        <h1 class="display-4">BIENVENIDOS!</h1>
+        <h1 class="display-4" id="asd">BIENVENIDOS!</h1>
 
         <p class="lead">You have successfully created your Yii-powered application.</p>
 
