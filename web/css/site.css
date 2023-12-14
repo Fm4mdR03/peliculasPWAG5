@@ -90,10 +90,13 @@ a.desc:after {
 
 /* Estilo para limitar el tamaño del logo */
 .logo {
-    width: 100px;
-    /* Ancho máximo de 100px */
-    height: 50px;
-    /* Altura máxima de 50px */
+    max-width: 50px;
+    height: auto;
+}
+
+.headerIndex {
+    display: flex;
+    justify-content: space-between;
 }
 
 .section-1 {
@@ -117,21 +120,4 @@ a.desc:after {
 
 .section-1_container__titulo{
     font-weight: bold;
-}
-
-/* Estilo para limitar el tamaño del logo */
-.logo {
-    width: 100px;  /* Ancho máximo de 100px */
-    height: 50px;  /* Altura máxima de 50px */
-    /* margin-right: 700px; */
-}
-
-.headerIndex {
-    display: flex;
-    justify-content: space-between;
-}
-
-.headerIndex {
-    display: flex;
-    justify-content: space-between;
 }

@@ -39,7 +39,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         ]);
         
         echo Html::a(
-            Html::img('https://drive.google.com/uc?id=1iE3ntXaFW04GZfXQ7YTEcHE0H-_yKCkA', ['alt' => 'Logo de la aplicación', 'class' => 'logo']),
+            Html::img('../web/images/logo.png', ['alt' => 'Logo de la aplicación', 'class' => 'logo']),
             Yii::$app->homeUrl
         );
         echo "</div>";
