@@ -3,6 +3,7 @@
 /** @var yii\web\View $this */
 
 $this->title = 'My Yii Application';
+use app\models\Pelicula;
 ?>
 <div class="site-index">
 
@@ -30,44 +31,30 @@ $this->title = 'My Yii Application';
     </div>
 
     <div class="body-content">
-        <div class="row">
-            <div class="col-lg-4 mb-3">
-                <h2>Lista de sexos</h2>
-                <?php
-                foreach($listaSexo as $item) {
-                    echo "<p>".$item->SEX_NOMBRE."</p>";
-                }
-                ?>
+    <div class="row">
+
+        <?php
+        $peliculasAlquiladas = Pelicula::find()
+            ->select(['pelicula.PEL_NOMBRE', 'director.DIR_NOMBRE', 'genero.GEN_NOMBRE', 'pelicula.PEL_FECHA_ESTRENO'])
+            ->joinWith(['dIR', 'gEN', 'alquilers']) // Usa los nombres exactos de los métodos en tu modelo
+            ->groupBy(['pelicula.PEL_ID'])
+            ->orderBy(['COUNT(alquiler.ALQ_ID)' => SORT_DESC])
+            ->limit(4)
+            ->all();
+
+        ?>
+
+        <?php foreach ($peliculasAlquiladas as $pelicula) : ?>
+            <div class="col-lg-3 mb-3">
+                <h2><?= $pelicula->PEL_NOMBRE ?></h2>
+                <p><strong>Director:</strong> <?= $pelicula->DIR_NOMBRE ?></p>
+                <p><strong>Género:</strong> <?= $pelicula->GEN_NOMBRE ?></p>
+                <p><strong>Fecha de Estreno:</strong> <?= $pelicula->PEL_FECHA_ESTRENO ?></p>
             </div>
-            <div class="col-lg-4 mb-3">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/forum/">Yii Forum &raquo;</a>
-                </p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/extensions/">Yii Extensions
-                        &raquo;</a></p>
-            </div>
-        </div>
+        <?php endforeach; ?>
 
     </div>
+</div>
+
+
 </div>

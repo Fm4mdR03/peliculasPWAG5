@@ -99,4 +99,10 @@ a.desc:after {
 .logo {
     width: 100px;  /* Ancho máximo de 100px */
     height: 50px;  /* Altura máxima de 50px */
+    /* margin-right: 700px; */
+}
+
+.headerIndex {
+    display: flex;
+    justify-content: space-between;
 }
