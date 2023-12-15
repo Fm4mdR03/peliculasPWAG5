@@ -21,7 +21,7 @@ use app\models\Pelicula;
         </div>
     </div>
 
-    <div class="jumbotron text-center bg-transparent mt-5 mb-5" id="section-2">
+    <div class="section-2 jumbotron text-center bg-transparent mt-5 mb-5" id="section-2">
         <h1 class="display-4 fw-bold" id="asd">En tendencia</h1>
         <p class="lead">Podrás visualizar nuestras películas más vistas a continuación:</p>
         <div class="row">
@@ -146,12 +146,10 @@ use app\models\Pelicula;
                             </td>
                         </tr>
                     </tbody>
-
                 </table>
             </div>
         </div>
     </div>
-
 
     <hr>
 
@@ -180,5 +178,6 @@ use app\models\Pelicula;
                 </div>
             </div>
         </div>
-
     </div>
+
+</div>
