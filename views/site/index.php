@@ -13,10 +13,14 @@ use app\models\Pelicula;
                 <h1 class="section-1_container__titulo display-4">Renta de Películas</h1>
                 <h1 class="section-1_container__titulo display-4">CopyFlix</h1>
                 <p class="lead">Las mejores películas a un clic de distancia.</p>
+                <a href="#section-2">
+                    <button type="button" class="btn btn-outline-light btn-lg">Ver más</button>
+                </a>
             </div>
         </div>
     </div>
 
+<<<<<<< Updated upstream
     <div class="jumbotron text-center bg-transparent mt-5 mb-5">
         <h1 class="display-4" id="asd">En tendencia</h1>
 
@@ -25,6 +29,8 @@ use app\models\Pelicula;
         <p><a class="btn btn-lg btn-success" href="https://www.yiiframework.com">Get started with Yii</a></p>
     </div>
 
+=======
+>>>>>>> Stashed changes
     <div class="body-content">
         <div class="row">
 
