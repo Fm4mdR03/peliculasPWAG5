@@ -40,10 +40,16 @@ use app\models\Pelicula;
 
             foreach ($peliculasAlquiladas as $pelicula) : ?>
                 <div class="col-lg-3 mb-3">
-                    <h2><?= $pelicula['PEL_NOMBRE'] ?></h2>
-                    <p><strong>Director:</strong> <?= $pelicula['DIR_NOMBRE'] ?? 'N/A' ?></p>
-                    <p><strong>Género:</strong> <?= $pelicula['GEN_NOMBRE'] ?? 'N/A' ?></p>
-                    <p><strong>Fecha de Estreno:</strong> <?= $pelicula['PEL_FECHA_ESTRENO'] ?></p>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2><?= $pelicula['PEL_NOMBRE'] ?></h2>
+                        </div>
+                        <div class="card-body text-start">
+                            <p><strong>Director:</strong> <?= $pelicula['DIR_NOMBRE'] ?? 'N/A' ?></p>
+                            <p><strong>Género:</strong> <?= $pelicula['GEN_NOMBRE'] ?? 'N/A' ?></p>
+                            <p><strong>Fecha de Estreno:</strong> <?= $pelicula['PEL_FECHA_ESTRENO'] ?></p>
+                        </div>
+                    </div>
                 </div>
             <?php endforeach; ?>
         </div>
@@ -54,7 +60,7 @@ use app\models\Pelicula;
     <div class="section-3 jumbotron text-center mt-5 mb-5">
         <h1 class="display-4 fw-bold">Inicia sesión</h5>
             <p class="lead">Y obtén recomendaciones personalizadas.</p>
-            <a href="login.php" class="btn btn-primary btn-lg">Iniciar sesión</a>
+            <a href="?r=site%2Flogin" class="btn btn-primary btn-lg">Iniciar sesión</a>
     </div>
 
     <hr>
@@ -65,16 +71,16 @@ use app\models\Pelicula;
             <p class="lead">Es muy fácil, solo debes seguir los siguientes pasos:</p>
             <div class="row">
                 <div class="col-lg-4">
-                    <img src="../web/images/1.png" class="img-fluid rounded mx-auto d-block" alt="Paso 1">
-                    <p class="lead">Regístrate en nuestra página.</p>
+                    <img src="../web/images/paso1.png" class="rounded-3" width="100" height="100" alt="Paso 1">
+                    <p class="lead"><span class="fw-bold">1. </span>Regístrate en nuestra página.</p>
                 </div>
                 <div class="col-lg-4">
-                    <img src="../web/images/2.png" class="img-fluid rounded mx-auto d-block" alt="Paso 2">
-                    <p class="lead">Elige la película que deseas ver.</p>
+                    <img src="../web/images/paso2.png" class="rounded-3" width="100" height="100" alt="Paso 2">
+                    <p class="lead"><span class="fw-bold">2. </span>Elige la película que deseas ver.</p>
                 </div>
                 <div class="col-lg-4">
-                    <img src="../web/images/3.png" class="img-fluid rounded mx-auto d-block" alt="Paso 3">
-                    <p class="lead">Disfruta de la película.</p>
+                    <img src="../web/images/paso3.png" class="rounded-3" width="100" height="100" alt="Paso 3">
+                    <p class="lead"><span class="fw-bold">3. </span>Disfruta de la película.</p>
                 </div>
             </div>
         </div>
