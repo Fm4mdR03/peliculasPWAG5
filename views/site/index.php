@@ -51,32 +51,57 @@ use app\models\Pelicula;
 
     <hr>
 
+    <div class="section-3 jumbotron text-center mt-5 mb-5">
+        <h1 class="display-4 fw-bold">Inicia sesión</h5>
+            <p class="lead">Y obtén recomendaciones personalizadas.</p>
+            <a href="login.php" class="btn btn-primary btn-lg">Iniciar sesión</a>
+    </div>
+
+    <hr>
+
+    <div class="section-4 jumbotron text-center mt-5 mb-5">
+        <div class="section-4_container container">
+            <h1 class="display-4 fw-bold">¿Cómo funciona?</h1>
+            <p class="lead">Es muy fácil, solo debes seguir los siguientes pasos:</p>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="../web/images/1.png" class="img-fluid rounded mx-auto d-block" alt="Paso 1">
+                    <p class="lead">Regístrate en nuestra página.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="../web/images/2.png" class="img-fluid rounded mx-auto d-block" alt="Paso 2">
+                    <p class="lead">Elige la película que deseas ver.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="../web/images/3.png" class="img-fluid rounded mx-auto d-block" alt="Paso 3">
+                    <p class="lead">Disfruta de la película.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
     <div class="section-5 jumbotron text-center mt-5 mb-5">
         <div id="carouselTestimonios" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselTestimonios" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselTestimonios" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselTestimonios" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselTestimonios" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../web/images/usuario1.png" class="rounded-circle" width="100" height="100">
+                    <img src="../web/images/avatar1.jpg" class="rounded-circle" width="100" height="100">
                     <p class="lead">"Me encanta esta página, puedo ver las películas que quiera."</p>
                     <h6 class="fw-bold">- Juan Pérez</h6>
                 </div>
                 <div class="carousel-item">
-                    <img src="../web/images/usuario2.png" class="rounded-circle" width="100" height="100">
+                    <img src="../web/images/avatar2.jpg" class="rounded-circle" width="100" height="100">
                     <p class="lead">"Es una página muy buena, puedo ver las películas que quiera."</p>
                     <h6 class="fw-bold">- María Pérez</h6>
                 </div>
                 <div class="carousel-item">
-                    <img src="../web/images/usuario3.png" class="rounded-circle" width="100" height="100">
+                    <img src="../web/images/avatar3.jpg" class="rounded-circle" width="100" height="100">
                     <p class="lead">"Me encanta esta página, puedo ver las películas que quiera."</p>
                     <h6 class="fw-bold">- José Pérez</h6>
                 </div>
                 <div class="carousel-item">
-                    <img src="../web/images/usuario4.png" class="rounded-circle" width="100" height="100">
+                    <img src="../web/images/avatar4.jpg" class="rounded-circle" width="100" height="100">
                     <p class="lead">"Es una página muy buena, puedo ver las películas que quiera."</p>
                     <h6 class="fw-bold">- Juanita Pérez</h6>
                 </div>
