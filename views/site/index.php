@@ -18,9 +18,9 @@ use app\models\Pelicula;
     </div>
 
     <div class="jumbotron text-center bg-transparent mt-5 mb-5">
-        <h1 class="display-4" id="asd">BIENVENIDOS!</h1>
+        <h1 class="display-4" id="asd">En tendencia</h1>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
+        <p class="lead">Podrás visualizar nuestras películas más vistas a continuación:</p>
 
         <p><a class="btn btn-lg btn-success" href="https://www.yiiframework.com">Get started with Yii</a></p>
     </div>
