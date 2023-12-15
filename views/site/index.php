@@ -10,9 +10,9 @@ use app\models\Pelicula;
     <div class="section-1 jumbotron text-center mt-5 mb-5">
         <div class="section-1_container container">
             <div>
-                <h1 class="section-1_container__titulo display-4">Renta de Películas</h1>
-                <h1 class="section-1_container__titulo display-4">CopyFlix</h1>
-                <p class="lead">Las mejores películas a un clic de distancia.</p>
+                <h1 class="section-1_container__titulo display-4 fw-bold">Renta de Películas</h1>
+                <h1 class="section-1_container__titulo display-4 fw-bold">CopyFlix</h1>
+                <p class="lead fw-light">Las mejores películas a un clic de distancia.</p>
                 <a href="#section-2">
                     <button type="button" class="btn btn-outline-light btn-lg">Ver más</button>
                 </a>
@@ -20,20 +20,10 @@ use app\models\Pelicula;
         </div>
     </div>
 
-<<<<<<< Updated upstream
-    <div class="jumbotron text-center bg-transparent mt-5 mb-5">
-        <h1 class="display-4" id="asd">En tendencia</h1>
-
+    <div class="jumbotron text-center bg-transparent mt-5 mb-5" id="section-2">
+        <h1 class="display-4 fw-bold" id="asd">En tendencia</h1>
         <p class="lead">Podrás visualizar nuestras películas más vistas a continuación:</p>
-
-        <p><a class="btn btn-lg btn-success" href="https://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
-=======
->>>>>>> Stashed changes
-    <div class="body-content">
         <div class="row">
-
             <?php
             $peliculasAlquiladas = Pelicula::find()
                 ->select(['pelicula.PEL_NOMBRE', 'pelicula.PEL_FECHA_ESTRENO'])
@@ -56,12 +46,35 @@ use app\models\Pelicula;
                     <p><strong>Fecha de Estreno:</strong> <?= $pelicula['PEL_FECHA_ESTRENO'] ?></p>
                 </div>
             <?php endforeach; ?>
-
         </div>
     </div>
 
+    <hr>
 
-
-
+    <div class="section-7 jumbotron text-center mt-5 mb-5">
+        <div class="section-7_container container">
+            <h1 class="fw-bold">Redes Sociales</h1>
+            <p class="lead">Síguenos en nuestras redes sociales para más contenido.</p>
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="https://img.icons8.com/color/96/000000/facebook-new.png" />
+                    </a>
+                    <p>Facebook</p>
+                </div>
+                <div class="col-lg-4">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="https://img.icons8.com/color/96/000000/instagram-new.png" />
+                    </a>
+                    <p>Instagram</p>
+                </div>
+                <div class="col-lg-4">
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img src="https://img.icons8.com/color/96/000000/twitter.png" />
+                    </a>
+                    <p>Twitter</p>
+                </div>
+        </div>
+    </div>
 
 </div>
